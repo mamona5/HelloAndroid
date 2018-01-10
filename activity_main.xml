@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/bulb"
+        android:src="@drawable/lightbulb3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:text="Light up your future.\nMaster in-demand skills."
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Udacity" />
+
+    <TextView
+        android:text="udacity"
+        android:id="@+id/Udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/create"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Udacity"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="2465 Latham St \nMountain View, CA 94043"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@id/Udacity"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="650-555-5555"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@id/Udacity"
+        android:textSize="16sp"
+        android:autoLink="phone"/>
+
+    <TextView
+        android:text="www.udacity.com"
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/phonenumber"
+        android:layout_alignLeft="@+id/address"
+        android:autoLink="web"/>
+
+    <ImageView
+        android:id="@+id/map"
+        android:src="@drawable/map"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/Udacity"
+        android:layout_alignTop="@id/address"
+        android:layout_toStartOf="@id/address"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/websiteicon"
+        android:src="@drawable/websiteicon"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_toStartOf="@id/website"
+        android:layout_alignTop="@id/website"
+        android:padding="5dp"/>
+
+</RelativeLayout>
+
