@@ -10,63 +10,63 @@
         android:src="@drawable/lightbulb3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop" />
 
     <TextView
-        android:text="Light up your future.\nMaster in-demand skills."
         android:id="@+id/create"
+        android:text="@string/lightup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_medium"
         android:fontFamily="sans-serif-smallcaps"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@color/colorPrimary"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/Udacity" />
 
     <TextView
-        android:text="udacity"
         android:id="@+id/Udacity"
+        android:text="@string/udacity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="28sp"
+        android:textSize="@dimen/text_large"
         android:fontFamily="sans-serif-smallcaps"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_below="@id/create"
         android:layout_centerHorizontal="true"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp" />
+        android:paddingTop="@dimen/padding_text"
+        android:paddingBottom="@dimen/padding_text" />
 
     <TextView
         android:id="@+id/address"
+        android:text="@string/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Udacity"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="2465 Latham St \nMountain View, CA 94043"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_alignLeft="@id/Udacity"
-        android:textSize="16sp" />
+        android:textSize="@dimen/text_small" />
 
     <TextView
         android:id="@+id/phonenumber"
+        android:text="@string/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/address"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="650-555-5555"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_alignLeft="@id/Udacity"
-        android:textSize="16sp"
+        android:textSize="@dimen/text_small"
         android:autoLink="phone"/>
 
     <TextView
-        android:text="www.udacity.com"
         android:id="@+id/website"
+        android:text="@string/website"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="@dimen/text_small"
         android:fontFamily="sans-serif-smallcaps"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_below="@+id/phonenumber"
         android:layout_alignLeft="@+id/address"
         android:autoLink="web"/>
@@ -81,7 +81,7 @@
         android:layout_below="@id/Udacity"
         android:layout_alignTop="@id/address"
         android:layout_toStartOf="@id/address"
-        android:padding="5dp"/>
+        android:padding="@dimen/padding_icon"/>
 
     <ImageView
         android:id="@+id/websiteicon"
@@ -92,7 +92,7 @@
         android:scaleType="centerCrop"
         android:layout_toStartOf="@id/website"
         android:layout_alignTop="@id/website"
-        android:padding="5dp"/>
+        android:padding="@dimen/padding_icon"/>
 
 </RelativeLayout>
 
